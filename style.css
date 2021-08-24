@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    background-color: skyblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2 {
+    text-decoration: underline;
+}
+canvas {
+    min-width: 30%;
+    max-width: 60%;
+    border: 1px dotted blueviolet;
+    background-color: gainsboro;
+}
+label {
+    font-style: italic;
+}
+#size {
+    margin-top: 10px;
+    font-style: italic;
+}
+#doItalyLabel, #doItaly {
+    margin: 10px 0 15px 0;
+}
+.buttons {
+    padding: 0 5px 10px 0;
+}
+.buttons button {
+    padding: 10px;
+}
+.reset {
+    background-color: crimson;
+    color: whitesmoke;
+}
+.range-input-group{
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    display: inline-block;
+}

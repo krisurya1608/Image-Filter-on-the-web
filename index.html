@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>MiniProject: Image Filters on the Web</title>
+       <link rel="stylesheet" href="style.css">
+       <script src="script.js"></script>
+</head>
+
+
+<h1>MiniProject: Image Filters on the Web</h1>
+<canvas id="canvas"></canvas>
+<div id="size"></div>
+<h2>Load an image</h2>
+<label for="image">Main image: </label>
+<input type="file" multiple="false" accept="image/*" id="image" onchange="uploadImage()"/>
+<h2>Filters</h2>
+<div class="buttons">
+    <button onclick="doGray()">Grayscale</button>
+    <button onclick="doRed()">red</button>
+    <button onclick="doItaly()">Italy</button>
+    <button onclick="doRainbow()">Rainbow</button>
+    <br/>
+    <div class="range-input-group">
+        <label for="blur">Blur: </label>
+        <input type="range" min="0" max="50" step="5" value="0" id="blur" onchange="doBlur()" />
+    </div>
+</div>
+<div class="buttons">
+    <button class="reset" onclick="resetImage()">Reset image</button>
+</div>
+
+<!-- Add SimpleImage library. -->
+<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
